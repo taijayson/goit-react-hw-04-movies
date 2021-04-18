@@ -1,0 +1,107 @@
+.buttonwrap {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.backbutton {
+  width: 100px;
+  height: 42px;
+  border-radius: 42px;
+  border: none;
+  background: rgb(210, 210, 210);
+  border: 1px solid rgb(59, 59, 59);
+  color: rgb(59, 59, 59);
+}
+
+.backbutton:hover,
+.backbutton:focus {
+  cursor: pointer;
+  transition: 0.3s linear;
+  background-color: rgb(59, 59, 59);
+  color: rgb(210, 210, 210);
+  border: 1px solid rgb(59, 59, 59);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+
+.card {
+  display: flex;
+}
+
+.image {
+  width: 300px;
+}
+
+.cardtext {
+  display: flex;
+  flex-direction: column;
+  /* height: 200px; */
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 20px 0;
+  background-color: rgb(59, 59, 59);
+  /* background-color: rgb(210, 210, 210); */
+  color: rgb(210, 210, 210);
+  margin: 0;
+}
+
+.overwiew {
+  background-color: rgb(210, 210, 210);
+  padding: 100px 15px;
+  margin: 0;
+  text-align: center;
+  color: rgb(59, 59, 59);
+}
+
+.genresWrap {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(210, 210, 210);
+}
+
+.genres:not(:last-child) {
+  border-right: 2px solid rgb(59, 59, 59);
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.aboutList {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  background-color: rgb(59, 59, 59);
+  color: rgb(210, 210, 210);
+}
+
+.aboutItem {
+  text-transform: uppercase;
+  padding: 15px 15px;
+  border-radius: 10%;
+}
+
+.aboutItem:hover,
+.aboutItem:focus {
+  background-color: rgb(210, 210, 210);
+  cursor: pointer;
+  transition: 0.2s linear;
+  color: rgb(59, 59, 59);
+}
+
+.aboutItem:not(:last-child) {
+  margin-right: 30px;
+}
+
+.aboutLink {
+  text-decoration: none;
+  color: inherit;
+}

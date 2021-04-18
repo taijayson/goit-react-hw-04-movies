@@ -12,10 +12,10 @@ const fetchGetTrending = async () => {
   }
 };
 
-const fetchSearchMovies = async () => {
+const fetchSearchMovies = async (response) => {
   try {
     const res = await axios.get(
-      `${URL}/search/movie?api_key=${KEY}&language=en-US&page=1&include_adult=false`
+      `${URL}/search/movie?api_key=${KEY}&query=${response}&language=en-US&page=1&include_adult=false`
     );
     return res.data.results;
   } catch (err) {
@@ -34,7 +34,7 @@ const fetchGetMovieDetails = async (movieId) => {
   }
 };
 
-const fetchGetMovieCredits = async () => {
+const fetchGetMovieCredits = async (movieId) => {
   try {
     const res = await axios.get(
       `${URL}/movie/${movieId}/credits?api_key=${KEY}&language=en-US`
@@ -45,12 +45,12 @@ const fetchGetMovieCredits = async () => {
   }
 };
 
-const fetchGetMovieReviews = async () => {
+const fetchGetMovieReviews = async (movieId) => {
   try {
     const res = await axios.get(
       `${URL}/movie/${movieId}/reviews?api_key=${KEY}&language=en-US&page=1`
     );
-    return res.data.cast;
+    return res.data.results;
   } catch (err) {
     console.log(err);
   }

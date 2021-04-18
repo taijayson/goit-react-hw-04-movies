@@ -1,0 +1,28 @@
+.creditsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  /* margin-left: -10px; */
+  list-style: none;
+  padding: 20px 0;
+  background-color: rgb(210, 210, 210);
+}
+
+.creditsWrap {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 5px;
+  padding: 20px 15px;
+}
+
+.creditsItem {
+  margin-top: 10px;
+  margin-left: 10px;
+  flex-basis: calc(100% / 8 - 10px);
+  text-align: center;
+  color: rgb(59, 59, 59);
+}
+
+.creditsImg {
+  height: 100%;
+}
